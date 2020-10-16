@@ -37,3 +37,6 @@ def getdata(show=True):
         complete_data.append(int(real_data))
     return complete_data
 
+if __name__ == "__main__":
+    print(getdata())
+
