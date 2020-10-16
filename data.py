@@ -2,6 +2,15 @@ from requests import get
 from bs4 import BeautifulSoup
 
 def getdata():
+    print("""
+to get the data use
+the sequence of data
+a = [0, 1, 2]
+a[0] = active_cases
+a[1] = descharged
+a[2] = deaths
+"""
+)
     headders = {"user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36"}
     data = get("https://www.mohfw.gov.in/", headers=headders)
     htmldata = data.content
@@ -25,10 +34,3 @@ def getdata():
         complete_data.append(int(real_data))
     return complete_data
 
-"""
-the sequence of data
-a = [0, 1, 2]
-a[0] = active_cases
-a[1] = descharged
-a[2] = deaths
-"""
