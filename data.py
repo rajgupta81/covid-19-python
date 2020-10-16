@@ -7,6 +7,7 @@ def getdata(show=True):
     """
     if show == True:
         print("""
+        if getdata() == a
     to get the data use the sequence of data
     a = [0, 1, 2]
     a[0] = active_cases
