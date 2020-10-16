@@ -15,7 +15,7 @@ use to install
 
 $ pip install requests
 
-2)bs4
+ 2)bs4
 
 use to install
 
